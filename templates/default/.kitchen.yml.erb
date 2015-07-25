@@ -5,24 +5,11 @@ driver:
 provisioner:
   name: chef_zero
 
-# platforms:
-#  - name: ubuntu-14.04
-# specific to run on asus labby
 platforms:
-  - name: ub-14.04-i386
-    driver:
-      box: ub-14.04-i386
-      box_url: https://cloud-images.ubuntu.com/vagrant/utopic/current/utopic-server-cloudimg-i386-vagrant-disk1.box
-
-#  - name: windows-2012r2
-#    transport:
-#      name: winrm
-#      port: 5985
-#      username: vagrant
-#      password: vagrant
-#    driver_config:
-#      box: windows2012r2
-#      box_url: http://localhost/windows2012r2.box
+- name: ubuntu-14.04
+  driver_config:
+    box: opscode-ubuntu-14.04
+    box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box
 
 suites:
   - name: default

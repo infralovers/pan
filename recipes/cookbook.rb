@@ -10,7 +10,7 @@ cookbook_directories = [
   'files/default',
   'test/integration/default/serverspec',
   'test/fixures/data_bags',
-  'spec/recipes'
+  'spec'
 ]
 cookbook_directories.each do |dir|
   directory File.join(cookbook_dir, dir) do
@@ -23,10 +23,10 @@ files_basic = [
   'chefignore',
   'Berksfile',
   'Gemfile',
+  'Guardfile',
   'LICENSE',
   'Rakefile',
   'VERSION',
-  'rvmrc',
   '.gitignore',
   '.rubocop.yml'
 ]
@@ -66,7 +66,7 @@ template "#{cookbook_dir}/recipes/default.rb" do
   action :create_if_missing
 end
 
-template "#{cookbook_dir}/spec/recipes/default_spec.rb" do
+template "#{cookbook_dir}/spec/default_spec.rb" do
   source 'unit_default_spec.rb.erb'
   helpers(ChefDK::Generator::TemplateHelper)
   action :create_if_missing
