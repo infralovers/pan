@@ -1,7 +1,11 @@
-name '<%= cookbook_name %>'
-maintainer '<%= copyright_holder %>'
+name             '<%= cookbook_name %>'
+maintainer       '<%= copyright_holder %>'
 maintainer_email '<%= email %>'
-license '<%= license %>'
-description 'Installs/Configures <%= cookbook_name %>'
+license          '<%= license %>'
+description      'Installs/Configures <%= cookbook_name %>'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version IO.read(File.join(File.dirname(__FILE__), 'VERSION'))
+version          IO.read(File.join(File.dirname(__FILE__), 'VERSION'))
+
+# update and uncomment this if you plan do release it
+#source_url 'https://github.com/<your-user>/<%= cookbook_name %>' if respond_to?(:source_url)
+#issues_url 'https://github.com/<your-user>/<%= cookbook_name %>/issues' if respond_to?(:issues_url)
