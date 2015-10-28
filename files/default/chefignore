@@ -51,8 +51,11 @@ spec/*
 spec/fixtures/*
 test/*
 features/*
+examples/*
 Guardfile
 Procfile
+test/*
+spec/*
 
 # SCM #
 #######
@@ -72,12 +75,12 @@ Procfile
 Berksfile
 Berksfile.lock
 cookbooks/*
-vendor/*
 tmp
 
 # Cookbooks #
 #############
 CONTRIBUTING
+CHANGELOG*
 
 # Strainer #
 ############
@@ -94,23 +97,3 @@ Vagrantfile
 # Travis #
 ##########
 .travis.yml
-
-# Ruby gems #
-#############
-rvmrc
-.rvmrc
-.ruby-version
-Gemfile
-Gemfile.lock
-.rubocop.yml
-
-# test kitchen #
-################
-.kitchen.yml
-.kitchen.local.yml
-kitchen.local.yml
-
-# editors #
-###########
-.idea
-
