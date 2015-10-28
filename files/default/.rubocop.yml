@@ -2,27 +2,31 @@
 AllCops:
   Exclude:
   - vendor/**/*
-  - metadata.rb
-  - Berksfile
+  - Guardfile
+  - berks-cookbooks/**/**
+AlignParameters:
+  Enabled: false
+ClassLength:
+  Enabled: false
+CyclomaticComplexity:
+  Enabled: false
 Documentation:
   Enabled: false
-AlignParameters:
-  Enabled: true
 Encoding:
-  Enabled: true
-HashSyntax:
-  Enabled: true
+  Enabled: false
+Style/FileName:
+  Enabled: false
 LineLength:
   Enabled: false
-EmptyLinesAroundBlockBody:
-  Enabled: false
 MethodLength:
-  Max: 40
-NumericLiterals:
-  MinDigits: 10
-Metrics/CyclomaticComplexity:
-  Max: 10
-Metrics/PerceivedComplexity:
-  Max: 10
+  Enabled: false
 Metrics/AbcSize:
-  Max: 29
+  Enabled: false
+PerceivedComplexity:
+  Enabled: false
+SingleSpaceBeforeFirstArg:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/FileName:
+  Enabled: false
