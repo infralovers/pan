@@ -6,7 +6,7 @@ pan is an example cookbook generator
 
 ### Tested And Validated On
 
-* Mac OSX 10.10 with ChefDK 0.6.2 
+* Mac OSX 10.11 with ChefDK 0.9.0 
 
 ## Usage
 
